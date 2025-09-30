@@ -7,7 +7,7 @@ public class Ejercicio5 {
 
         Scanner teclado = new Scanner(System.in);
 
-        int numero = 0;
+        
 
         int numero= 0;
         try {
