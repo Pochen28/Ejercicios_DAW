@@ -20,8 +20,8 @@ public class String_Cosas {
         int posicion_empodera = frase.indexOf("empodera");
         System.out.println(posicion_empodera);
 
-        int posicion_empoera2 = frase.indexOf("empodera", 1);
-        System.out.println(posicion_empoera2);
+        int posicion_empodera2 = frase.indexOf("empodera", 1);
+        System.out.println(posicion_empodera2);
 
         int posicion_empodera_ult = frase.lastIndexOf("empodera");
         System.out.println(posicion_empodera_ult);
