@@ -26,7 +26,7 @@ public class EjercicioGeneraciones {
         int modo = 0;
         if (teclado.hasNextInt()){
             modo = teclado.nextInt();
-            
+
         }else{
             System.out.println("Introduce un valor válido...");
             return;
