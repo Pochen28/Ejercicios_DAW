@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Practica_5 {
+public class Num_Suerte {
     static void main() {
         Scanner teclado = new Scanner(System.in);
         boolean repetir = false;
