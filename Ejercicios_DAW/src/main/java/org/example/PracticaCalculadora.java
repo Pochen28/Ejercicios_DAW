@@ -32,8 +32,20 @@ public class PracticaCalculadora {
                 System.out.println("Comencemos a restar.");
                 double resta = num1 - num2;
                 System.out.println(resta);
+
+            case "x":    
             case "/":
-                System.out.println( "" );
+                System.out.println("Comencemos a dividir. ");
+
+                if (num2 == 0){
+                    System.out.println("Error, no se pueden dividir números entre cero.");
+                }else {
+                    double division = num1 / num2;
+                    System.out.println(division);
+                }
+
+
+
 
         }
 
