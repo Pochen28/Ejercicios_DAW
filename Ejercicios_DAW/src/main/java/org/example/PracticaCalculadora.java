@@ -33,9 +33,9 @@ public class PracticaCalculadora {
             System.out.println("--------");
             String signo = teclado.next();
             String signo_mayus = signo.toUpperCase();
-            char verificar = signo.charAt(0);
+            char verificar = signo_mayus.charAt(0);
             if (verificar == '+' || verificar == '-' || verificar == '/' || verificar == 'x' || verificar == 'R') {
-                if (signo.length() == 1) {
+                if (signo_mayus.length() == 1) {
 
                     boolean iguales = signo_mayus.equals("R");
                     repetir3 = true;
@@ -62,7 +62,7 @@ public class PracticaCalculadora {
                         } while (repetir2 = false);
 
 
-                        switch (signo) {
+                        switch (signo_mayus) {
                             case "+":
                                 System.out.println("Comencemos a sumar.");
                                 double suma = num1 + num2;
