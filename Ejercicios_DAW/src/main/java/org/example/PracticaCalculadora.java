@@ -84,11 +84,12 @@ public class PracticaCalculadora {
                                 break;
 
                             case "/":
-                                System.out.println("Comencemos a dividir. ");
+
 
                                 if (num2 == 0) { // Control para evitar la división entre cero
                                     System.out.println("Error, no se pueden dividir números entre cero.");
                                 } else {
+                                    System.out.println("Comencemos a dividir. ");
                                     double division = num1 / num2;
                                     System.out.println("RESULTADO = " + division);
                                     break;
