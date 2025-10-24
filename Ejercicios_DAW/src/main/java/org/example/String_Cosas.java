@@ -5,6 +5,23 @@ import java.util.Scanner;
 public class String_Cosas {
     static void main() {
         Scanner teclado = new Scanner(System.in);
+
+
+
+        int a, b , c , d;
+
+        a = teclado.nextInt();
+        b= 0;
+        c= 1;
+        while (a!=0){
+            b++;
+            c = c + a/ b;
+            a = teclado.nextInt();
+        }
+
+        d = b + c;
+        System.out.println(d);
+
         String frase = "Me siento empodera -a-a, sigo empodera";
 
         int tamanyo = frase.length();
@@ -46,6 +63,8 @@ public class String_Cosas {
 
         String frase_concatenada = frase.concat(" Misha dame un becico");
         System.out.println(frase_concatenada);
+
+
 
     }
 
