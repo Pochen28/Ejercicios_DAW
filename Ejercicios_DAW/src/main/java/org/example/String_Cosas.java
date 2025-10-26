@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class String_Cosas {
     static void main() {
         Scanner teclado = new Scanner(System.in);
-<<<<<<< HEAD
+
 
 
 
@@ -24,8 +24,7 @@ public class String_Cosas {
         System.out.println(d);
 
         String frase = "Me siento empodera -a-a, sigo empodera";
-=======
->>>>>>> 00fbdf6ebf3645343141755e694fcb6be70f5dcb
+
 
         String signo = teclado.next();
 
@@ -49,7 +48,7 @@ public class String_Cosas {
                 System.out.println("Comencemos a dividir. ");
 
 
-                String frase = "Me siento empodera -a-a, sigo empodera";
+                String frase2 = "Me siento empodera -a-a, sigo empodera";
 
                 int tamanyo = frase.length();
                 System.out.println(tamanyo);

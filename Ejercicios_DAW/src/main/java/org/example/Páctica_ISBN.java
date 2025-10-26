@@ -6,6 +6,7 @@ public class Páctica_ISBN {
     static void main() {
         Scanner teclado = new Scanner(System.in);
         int x;
+
         System.out.println("Bienvenido al comprobador de ISBN");
         System.out.println("Introduce el ISBN");
         String isbn = teclado.next();
@@ -20,6 +21,7 @@ public class Páctica_ISBN {
                 System.out.println("Validemos el ISBN");
 
                     for (int i = 0; i < 10 ; i++) {
+                        int suma = 0;
                         char posicion = isbn_mayus.charAt(i);
                         String comprobar_num = isbn.substring(0, 9);
                         if (i==9 && posicion == 'X' ){
@@ -29,10 +31,13 @@ public class Páctica_ISBN {
                            try {
                                int comprobar_int = Integer.parseInt(comprobar_num);
 
-                               System.out.println("todo bien");
+                               suma +=   posicion *(10 - i);
+                               System.out.println (suma);
                            }catch (Exception Err){
                                System.out.println("Error");
                            }
+
+
 
                         }
 

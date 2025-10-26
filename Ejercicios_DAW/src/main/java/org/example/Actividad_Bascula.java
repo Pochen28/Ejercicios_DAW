@@ -54,7 +54,7 @@ public class Actividad_Bascula {
                 }while (repetir2 == true);
 
                 if (peso > peso_maximo){
-                    System.out.println("Lo siento, excedes el peso permitido por" + (peso - peso_maximo) + "kg.");
+                    System.out.println("Lo siento, excedes el peso permitido por: " + (peso - peso_maximo) + "kg.");
 
                 }else{
                     if (peso< altura * 2/8){
