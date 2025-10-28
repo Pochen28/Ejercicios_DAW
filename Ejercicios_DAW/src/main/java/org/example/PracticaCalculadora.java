@@ -30,20 +30,19 @@ public class PracticaCalculadora {
 
         do {
             System.out.println("Elige una operación: ");
-<<<<<<< HEAD
+
             System.out.println(" 1.(+) \n 2.(-) \n 3.(X) \n 4.(/) \n 5.(R) ");
-=======
-            System.out.println(" 1.(+) \n 2.(-) \n 3.(x) \n 4.(/) \n 5.(R) ");
->>>>>>> 00fbdf6ebf3645343141755e694fcb6be70f5dcb
+
+
+
             System.out.println("--------");
             String signo = teclado.next();
             String signo_mayus = signo.toUpperCase();
             char verificar = signo_mayus.charAt(0);
-<<<<<<< HEAD
+
             if (verificar == '+' || verificar == '-' || verificar == '/' || verificar == 'X' || verificar == 'R') { // Comprueba que el símbolo esté entre los permitidos
-=======
-            if (verificar == '+' || verificar == '-' || verificar == '/' || verificar == 'x' || verificar == 'R') { // Comprueba que el símbolo esté entre los permitidos
->>>>>>> 00fbdf6ebf3645343141755e694fcb6be70f5dcb
+
+
                 if (signo_mayus.length() == 1) {
 
                     boolean iguales = signo_mayus.equals("R");
@@ -121,9 +120,7 @@ public class PracticaCalculadora {
 
         } while (repetir3 == false); // Repite mientras haya un error con el signo
     }
-<<<<<<< HEAD
-}
-=======
+
 }
 
 
@@ -132,4 +129,4 @@ public class PracticaCalculadora {
 
 
 
->>>>>>> 00fbdf6ebf3645343141755e694fcb6be70f5dcb
+
