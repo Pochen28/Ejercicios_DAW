@@ -1,31 +1,21 @@
 package org.example;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class Actividad {
 
-    static void main() {
+    public static void main(String[] args) {
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        int longitud = 12;
+        String contraseña = "";
 
-        Scanner teclado = new Scanner(System.in);
+        Random aleatorio = new Random();
 
-        System.out.println("¿Cómo te llamas?");
+        for (int i = 0; i < longitud; i++) {
+            int indice = aleatorio.nextInt(caracteres.length());
+            contraseña += caracteres.charAt(indice);
+        }
 
-        String nombre = teclado.nextLine();
-
-        System.out.println("¿A qué curso vas?");
-        String curso = teclado.next();
-
-        System.out.println("Hola " + nombre +" bienvenido a " + curso);
-
-        System.out.println("Introduce un número...");
-        int num1 = teclado.nextInt();
-
-        System.out.println("Introduce otro número...");
-        int num2 = teclado.nextInt();
-
-        System.out.println("El resultado es " +( num1 +num2 ));
-
-        int resultado = num1+num2;
-        System.out.println("El resultado es " + resultado);
+        System.out.println("Contraseña generada: " + contraseña);
     }
 }

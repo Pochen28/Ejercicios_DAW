@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Páctica_ISBN {
     static void main() {
         Scanner teclado = new Scanner(System.in);
-        int x;
+
         System.out.println("Bienvenido al comprobador de ISBN");
         System.out.println("Introduce el ISBN");
         String isbn = teclado.next();
@@ -17,26 +17,31 @@ public class Páctica_ISBN {
         int opcion = teclado.nextInt();
         switch (opcion) {
             case 1:
+                int suma = 0;
                 System.out.println("Validemos el ISBN");
 
-                    for (int i = 0; i < 10 ; i++) {
-                        char posicion = isbn_mayus.charAt(i);
-                        String comprobar_num = isbn.substring(0, 9);
-                        if (i==9 && posicion == 'X' ){
-                            x = 10;
-                            System.out.println("Hay una X");
-                        }else {
-                           try {
-                               int comprobar_int = Integer.parseInt(comprobar_num);
+                for (int i = 0; i < 10; i++) {
 
-                               System.out.println("todo bien");
-                           }catch (Exception Err){
-                               System.out.println("Error");
-                           }
+                    int x = 0;
+                    char posicion = isbn_mayus.charAt(i);
 
+                    if (i == 9 && posicion == 'X') {
+                        x = 10;
+                        System.out.println("Hay una X");
+                    } else {
+                        try {
+                            x = Integer.parseInt("" + posicion);
+
+
+                        } catch (Exception Err) {
+                            System.out.println("Error");
+                            return;
                         }
 
-
+                    }
+                    int producto = x * (10-i);
+                    suma += producto;
+                    System.out.println( x + " x " + (10- i) + " = " + producto);
                 }
 
                 break;
