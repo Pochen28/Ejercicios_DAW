@@ -26,7 +26,7 @@ public class Páctica_ISBN {
                 System.out.println("Validemos el ISBN");
 
                 for (int i = 0; i < 10; i++) {
-<<<<<<< HEAD
+
 
                     int x = 0;
                     char posicion = isbn_mayus.charAt(i);
@@ -41,7 +41,7 @@ public class Páctica_ISBN {
 
                         } catch (Exception Err) {
                             System.out.println("Error");
-=======
+
                     int x = 0;
                     char posicion = isbn_mayus.charAt(i); // Obtiene cada carácter del ISBN
 
@@ -52,17 +52,17 @@ public class Páctica_ISBN {
                             x = Integer.parseInt("" + posicion); // Convierte el carácter numérico a entero para que salte error en el try catch si no hay un número
                         } catch (Exception Err) {
                             System.out.println("Error: se ha encontrado un carácter no numérico en una posición incorrecta.");
->>>>>>> 23e62d58b0e255535b97c5cb94b5cb4ac6bdced7
+
                             return;
                         }
                     }
 
-<<<<<<< HEAD
+
                     }
                     int producto = x * (10-i);
                     suma += producto;
                     System.out.println( x + " x " + (10- i) + " = " + producto);
-=======
+
                     int producto = x * (10 - i); // Multiplica cada dígito por su valor correspondiente
                     suma += producto;
                     System.out.println(x + " x " + (10 - i) + " = " + producto);
@@ -73,7 +73,7 @@ public class Páctica_ISBN {
                     System.out.println("El ISBN es válido, la suma total es: " + suma);
                 } else {
                     System.out.println("El ISBN no es válido ya que no es divisible entre 11, la suma total es: " + suma);
->>>>>>> 23e62d58b0e255535b97c5cb94b5cb4ac6bdced7
+
                 }
 
                 break;
@@ -153,4 +153,6 @@ public class Páctica_ISBN {
                 break;
         }
     }
+
+
 }
