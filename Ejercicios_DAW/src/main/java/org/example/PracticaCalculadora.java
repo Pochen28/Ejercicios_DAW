@@ -47,10 +47,9 @@ public class PracticaCalculadora {
             String signo_mayus = signo.toUpperCase();
             char verificar = signo_mayus.charAt(0);
 
-            if (verificar == '+' || verificar == '-' || verificar == '/' || verificar == 'X' || verificar == 'R') { // Comprueba que el símbolo esté entre los permitidos
 
 
-                if (signo_mayus.length() == 1) {
+
 
 
 
@@ -139,11 +138,4 @@ public class PracticaCalculadora {
     }
 
 }
-
-
-
-
-
-
-
 
