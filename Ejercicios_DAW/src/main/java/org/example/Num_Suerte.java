@@ -11,6 +11,7 @@ public class Num_Suerte {
 
             System.out.println("Introduce tu fecha de nacimiento dd/mm/aaaa: ");
             String nacimiento = teclado.nextLine();
+            System.out.println(nacimiento);
 
 
 

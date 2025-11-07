@@ -13,7 +13,7 @@ public class Ejercicio6_Vectores {
             }
             if (es_o_no);
 
-                
+
         }
     }
 }

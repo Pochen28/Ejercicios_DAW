@@ -19,7 +19,7 @@ public class BarajaPrueba {
 
             if (jugadores <= 10 && jugadores > 1) {
 
-                // ✅ 1. Crear el mazo de 40 cartas (1–7, 10–12)
+
                 String[] palos = {"bastos", "oros", "copas", "espadas"};
                 int[] numeros = {1, 2, 3, 4, 5, 6, 7, 10, 11, 12};
 
@@ -31,7 +31,7 @@ public class BarajaPrueba {
                     }
                 }
 
-                // ✅ 2. Barajar el mazo
+
                 Collections.shuffle(mazo);
 
                 int distribucion = cartas / jugadores;
