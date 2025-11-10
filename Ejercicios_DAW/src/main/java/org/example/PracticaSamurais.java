@@ -20,8 +20,7 @@ public class PracticaSamurais {
 
             System.out.println("EQUIPO 1");
             System.out.println("Introduce la poencia de tus samuráis (dividida entre espacios y potencia máxima = 24)");
-            potencia  = teclado.nextLine();
-            System.out.println(potencia.length());
+            potencia  = teclado.nextLine();System.out.println(potencia.length());
 
 
             if (potencia.length() == 13){
@@ -29,7 +28,7 @@ public class PracticaSamurais {
 
 
             }else {
-                System.out.println("Error, introduce únicamnete 7 números.");
+                System.out.println("Error, introduce 7 números.");
                 repetir = false;
             }
 
