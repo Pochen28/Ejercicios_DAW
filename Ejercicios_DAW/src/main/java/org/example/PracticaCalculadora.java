@@ -11,6 +11,7 @@ public class PracticaCalculadora {
         boolean repetir3 = true;
         double num1 = 0;
         double num2 = 0;
+
         System.out.println("BIENVENIDO A CALCULATOR");
         // Bucle para asegurarse de que el primer valor introducido sea un número válido
         do {
@@ -31,19 +32,47 @@ public class PracticaCalculadora {
         do {
             System.out.println("Elige una operación: ");
 
+<<<<<<< HEAD
             System.out.println(" 1.(+) \n 2.(-) \n 3.(X) \n 4.(/) \n 5.(R) ");
 
             System.out.println(" 1.(+) \n 2.(-) \n 3.(x) \n 4.(/) \n 5.(R) ");
+=======
+
+
+
+            System.out.println(" 1.(+) \n 2.(-) \n 3.(x) \n 4.(/) \n 5.(R) ");
+
+
+            System.out.println(" 1.(+) \n 2.(-) \n 3.(X) \n 4.(/) \n 5.(R) ");
+
+
+
+>>>>>>> ee66348105c6e504d4d20d21db7121041c8dcac9
             System.out.println("--------");
             String signo = teclado.next();
             String signo_mayus = signo.toUpperCase();
             char verificar = signo_mayus.charAt(0);
+<<<<<<< HEAD
 
             if (verificar == '+' || verificar == '-' || verificar == '/' || verificar == 'X' || verificar == 'R') { // Comprueba que el símbolo esté entre los permitidos
 
                 if (verificar == '+' || verificar == '-' || verificar == '/' || verificar == 'x' || verificar == 'R') { // Comprueba que el símbolo esté entre los permitidos
                     if (signo_mayus.length() == 1) {
 
+=======
+
+
+
+
+
+
+
+
+                if (verificar == '+' || verificar == '-' || verificar == '/' || verificar == 'X' || verificar == 'R') { // Comprueba que el símbolo esté entre los permitidos
+
+                    if (signo_mayus.length() == 1) {
+
+>>>>>>> ee66348105c6e504d4d20d21db7121041c8dcac9
                         boolean iguales = signo_mayus.equals("R");
                         repetir3 = true;
                         if (iguales) {
@@ -117,9 +146,20 @@ public class PracticaCalculadora {
                     teclado.nextLine();
                 }
 
+<<<<<<< HEAD
             }
 
         } while (repetir3 == false) ; // Repite mientras haya un error con el signo
     }
 
 }
+=======
+
+
+        } while (repetir3 = false);
+
+    }
+
+}
+
+>>>>>>> ee66348105c6e504d4d20d21db7121041c8dcac9
