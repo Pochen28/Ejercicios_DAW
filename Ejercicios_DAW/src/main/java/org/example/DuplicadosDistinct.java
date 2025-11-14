@@ -27,6 +27,7 @@ public class DuplicadosDistinct {
         int numeros[] = new int[20];
 
         for (int i = 0; i < numeros.length; i++) {
+
             numeros[i] = aleatorio.nextInt(18) + 1;
         }
         System.out.println(Arrays.toString(numeros));
