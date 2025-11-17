@@ -19,20 +19,28 @@ public class PracticaPrimitiva {
         System.out.println("--La Primitiva--");
 
         do {
-            System.out.println("Introduce 6 números entre el 1 y el 49 para la primitiva, y por último el reintegro, siguiendo el siguiente formato: N-N-N-N-N-N/R");
 
+            System.out.println("Introduce 6 números entre el 1 y el 49 para la primitiva, y por último el reintegro, siguiendo el siguiente formato: N-N-N-N-N-N/R");
             numeros = teclado.nextLine();
             formato = numeros.matches("\\d{1,2}-\\d{1,2}-\\d{1,2}-\\d{1,2}-\\d{1,2}-\\d{1,2}/\\d{1}");
+
             if (!formato){
                 System.out.println("Introduce correctamente el formato");
+            }else {
+                String vector_nums [] = numeros.split("[-/]");
+                for (int i = 0; i < vector_nums.length -1; i++) {
+                    int vector_int = Integer.parseInt(vector_nums[i]);
+                    if (vector_int  < 1 || vector_int>49){
+                        System.out.println("MAL");
+                        formato = false;
+                        break;
+                    }
+                }
             }
+
 
         }while (formato == false);
 
-        String vector_nums [] = numeros.split(numeros);
 
-
-
-        System.out.println("Introduce el reintegro, un número del 0 al 9");
     }
 }
