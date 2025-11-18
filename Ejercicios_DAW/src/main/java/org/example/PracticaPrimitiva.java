@@ -13,9 +13,14 @@ public class PracticaPrimitiva {
         String numeros = "";
         int ganador_primitiva [] = new int [6];
         for (int i = 0; i < ganador_primitiva.length; i++) {
-            ganador_primitiva[i] = aleatorio.nextInt(0,50);
-        }
 
+            ganador_primitiva[i] = aleatorio.nextInt(1,50);
+            
+            if (i == 5){
+                ganador_primitiva[i] = aleatorio.nextInt(0,10);
+            }
+        }
+        System.out.println(Arrays.toString(ganador_primitiva));
         System.out.println("--La Primitiva--");
 
         do {
@@ -37,6 +42,8 @@ public class PracticaPrimitiva {
                     }
                 }
             }
+
+
 
 
         }while (formato == false);
