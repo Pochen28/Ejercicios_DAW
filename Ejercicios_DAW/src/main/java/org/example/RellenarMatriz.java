@@ -13,6 +13,7 @@ public class RellenarMatriz {
             String fila [] = teclado.next().split(",");
             if (fila.length == matriz[i].length) {
                 for (int j = 0; j < matriz [i].length; j++) {
+                    System.out.println(matriz [i].length);
                     matriz [i] [j] = fila [j];
                 }
             }else {

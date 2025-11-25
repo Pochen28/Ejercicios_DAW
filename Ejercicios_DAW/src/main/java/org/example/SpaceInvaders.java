@@ -12,6 +12,7 @@ public class SpaceInvaders {
         
         String matriz [] [] = new String[filas][3];
 
+
         for (int i = 0; i < matriz.length; i++) {
             String fila [] = teclado.next().split("");
 
