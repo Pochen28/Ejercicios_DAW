@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -17,7 +18,7 @@ public class EjercicoBingo {
         }
         for (int filas [] : carton){
             for (int columnas  : filas){
-                System.out.print(columnas + "");
+                System.out.print(columnas + " ");
             }
             System.out.print("\n");
         }
