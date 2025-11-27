@@ -1,7 +1,6 @@
-package org.example;
+package org.example.VectoresAdelante;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class ChuletaVectores {
