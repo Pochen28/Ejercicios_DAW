@@ -1,4 +1,4 @@
-package org.example;
+package org.example.VectoresAdelante;
 
 public class Ejercicio6_Vectores {
     static void main() {

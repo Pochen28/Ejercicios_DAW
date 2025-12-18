@@ -1,6 +1,5 @@
-package org.example;
+package org.example.VectoresAdelante;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
