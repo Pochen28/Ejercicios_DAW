@@ -9,7 +9,7 @@ public class IniciacionRecursividad {
     public static void imprimir (int num){
 
 
-        if (num<= limite){
+        if (num<=  limite){
             return;
         }else {
             System.out.println(num);
