@@ -18,24 +18,21 @@ public class MultiplicadorTresCifras {
                 System.out.println("Dame un multiplicador:");
                 multiplicador = teclado.nextInt();
 
-                // Corrección: Quité el ';' al final y ajusté la condición del if para el rango [100, 200]
                 if (multiplicando > 200 || multiplicando < 100 || multiplicador > 200 || multiplicador < 100) {
                     System.out.println("Los valores de ambos números deben estar entre 100 y 200.");
-                    repetir = true; // Forzamos a repetir si la validación de rango falla
+                    repetir = true;
                 }
 
             } catch (Exception Err) {
                 System.out.println("Error, se admiten números únicamente");
                 repetir = true;
-                teclado.nextLine(); // Importante para limpiar el buffer del scanner
+                teclado.nextLine();
             }
 
         } while (repetir);
 
-        String intmultiplicando = Integer.toString(multiplicando);
         String intmultiplicador = Integer.toString(multiplicador);
 
-        // Aquí empieza la unión de la segunda imagen
         int unidades = Integer.parseInt(intmultiplicador.substring(2, 3));
         int decenas = Integer.parseInt(intmultiplicador.substring(1, 2));
         int centenas = Integer.parseInt(intmultiplicador.substring(0, 1));
@@ -46,7 +43,6 @@ public class MultiplicadorTresCifras {
         int resultado = multiplicando * multiplicador;
 
         System.out.println();
-        // He respetado los espacios para que el formato de salida sea igual al tuyo
         System.out.println("    " + multiplicando);
         System.out.println(" x " + multiplicador);
         System.out.println("--------");
