@@ -65,7 +65,7 @@ public class BatallaDeSamurais {
         System.out.println("¡Empieza la batalla!");
 
         for (int i = 0; i < 7; i++) {
-            
+
             do {
                 samurai_aleatorio = aleatorio.nextInt(potencias1.length);
             }while (usados [samurai_aleatorio]); // esta parte me ayudé con IA pero patri te juro que entiendo como funciona eso de jugar con el verdadero y falso de la posicion dentro del vector booleano :)
