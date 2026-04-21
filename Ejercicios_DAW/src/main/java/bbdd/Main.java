@@ -7,9 +7,11 @@ public class Main {
 
         Connection bd = conexion();
         System.out.println("Realizando consultas...");
+        consulta(bd);
         desconectar(bd);
 
     }
+
 
     public static Connection conexion() {
         Connection conexion;
@@ -44,12 +46,27 @@ public class Main {
 
     public static void consulta (Connection conexion){
 
-        String query = "SELECT * FROM estudiantes";
+        String query = "SELECT * FROM estudiante";
 
         //necesitamos dos variables de tipo Statement y ResultSet para realizar la consulta y guardar la respuesta
         Statement stmt;
-        ResultSet respuesta;
 
+        try {
+            stmt = conexion().createStatement();
+            ResultSet resultados = stmt.executeQuery(query);
+
+            while (resultados.next()){
+                Integer nia = resultados.getInt("nia");
+                String nombre = resultados.getString("nombre");
+                Date fecha = resultados.getDate("fecha_nacimiento");
+                System.out.println("Estudiamte con nia " + nia + " nombre " + nombre + " fecha de nacimiento " + fecha );
+            }
+
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+            throw new RuntimeException();
+        }
+        ResultSet respuesta;
         try {
             stmt = conexion.createStatement();
             respuesta = stmt.executeQuery(query);
@@ -62,6 +79,19 @@ public class Main {
             }
 
         } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void modificar (Connection conexion){
+
+        String update = "UPDATE estudiante SET = nombre = 'Ivan' WHERE nombre 0 'Silvia'";
+        Statement stmt;
+
+        try{
+            stmt = conexion.createStatement();
+        }catch (SQLException e){
             System.out.println(e.getMessage());
             throw new RuntimeException(e);
         }
